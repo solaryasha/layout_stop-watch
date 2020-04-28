@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #2193b0, #6dd5ed); }
+
+.clock {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff; }
+  .clock .hand {
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background-color: #000;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%; }
+  .clock .hand-minute {
+    -webkit-animation: hand-rotation 60s linear infinite;
+            animation: hand-rotation 60s linear infinite; }
+  .clock .hand-second {
+    -webkit-animation: hand-rotation 3600s linear infinite;
+            animation: hand-rotation 3600s linear infinite; }
+
+@-webkit-keyframes hand-rotation {
+  from {
+    transform: rotate(90deg); }
+  to {
+    transform: rotate(450deg); } }
+
+@keyframes hand-rotation {
+  from {
+    transform: rotate(90deg); }
+  to {
+    transform: rotate(450deg); } }
+
+/*# sourceMappingURL=main.css.map */
