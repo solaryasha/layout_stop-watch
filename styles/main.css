@@ -7,7 +7,7 @@ body {
   background: linear-gradient(to right, #2193b0, #6dd5ed); }
 
 .clock {
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -23,23 +23,23 @@ body {
     top: 50%;
     transform: rotate(90deg);
     transform-origin: 100%; }
-  .clock .hand-minute {
+  .clock .hand--minute {
     -webkit-animation: hand-rotation 60s linear infinite;
             animation: hand-rotation 60s linear infinite; }
-  .clock .hand-second {
+  .clock .hand--second {
     -webkit-animation: hand-rotation 3600s linear infinite;
             animation: hand-rotation 3600s linear infinite; }
 
 @-webkit-keyframes hand-rotation {
-  from {
+  0% {
     transform: rotate(90deg); }
-  to {
+  100% {
     transform: rotate(450deg); } }
 
 @keyframes hand-rotation {
-  from {
+  0% {
     transform: rotate(90deg); }
-  to {
+  100% {
     transform: rotate(450deg); } }
 
 /*# sourceMappingURL=main.css.map */
